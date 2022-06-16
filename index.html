@@ -4,12 +4,22 @@
 <title>정빈이의 홈페이지</title>
 <meta charset="utf-8">
 <style>
- a{color:black;
+ #grid{
+   display: grid;
+   grid-template-columns: 1fr 6fr;
+ }
+ ul{
+   margin: 0;
+ }
+ a{
+   color:black;
    text-decoration: none;
    font-weight: bold;
-}
-
-
+ }
+ h2{border-bottom:1px solid gray;
+ padding: 30px;
+ margin:0;
+ }
  </style>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -24,16 +34,22 @@
 
 </head>
 
-<body style="text-align: center">
-  <h2 style="color:black; font-size: 35px;">정빈이가 만든 홈페이지</h2>
-  <h1><a href="index.html" style="color:green; text-decoration:underline; font-size:40px;">Main</a></h1>
-<p>
-  <br><a href="방명록.html" style="font-size:20px">[방명록]</a>
+<body>
+  <h2 style="color:black; font-size: 35px; text-align: center;">oO MY FIRST WEB PAGE Oo</h2>
+
+<div id=grid>
+<ul style=" border-right: 1px solid gray; width: 200px; text-align:center; padding: 0;">
+  <h1><a href="index.html" style="color:green; text-decoration:underline; font-size:40px;" class="contents">
+    Main
+  </a></h1>
+
+  <a href="방명록.html" style="font-size:20px">[방명록]</a>
   <br><a href="일기장.html" style="font-size:20px">[일기장]</a>
   <br><a href="일촌신청.html" style="font-size:20px">[일촌신청]</a>
-</p>
+</ul>
 
-<br>안녕하세요
+<div style="text-align:center;">
+<br><br><br>안녕하세요
 <br>오신 것을 환영합니다^_^
 
 
@@ -51,5 +67,7 @@
     <br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/tZooW6PritE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <br><br>모르는게 있다면 저에게 물어보시길
   <br>ㅎㅏ하하</p>
+</div>
+</div>
 </body>
 </html>
