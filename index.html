@@ -7,23 +7,17 @@
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9TGF667ZD4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-9TGF667ZD4');
-</script>
-
+<script src="colors.js"></script>
 </head>
 
 <body>
-  <h2 style="color:DarkSlateBlue; font-size: 35px; text-align: center;">oO MY FIRST WEB PAGE Oo</h2>
+  <h2 style="color:black; font-size: 35px; text-align: center;">
+    <a href="index.html">oO MY FIRST WEB PAGE Oo</a></h2>
 
 
 <div id=grid>
 <ul>
-  <h1><a href="index.html" style="color:DarkSlateBlue; text-decoration:underline; font-size:40px;">
+  <h1><a href="index.html" style="color:black; text-decoration:underline; font-size:40px;">
     Main
   </a></h1>
 
@@ -33,39 +27,22 @@
   <br><a href="일촌신청.html" style="font-size:20px">[일촌신청]</a>
   <div>
 
-<script>
-var A=document.querySelector('body');
-var i=0;
-var B=#이름세기.length;
-</script>
-
-
   <br><br><br><input type="button" value="주인장에게 인사받기" style="font-size: 15px;"
-  onclick="alert('안녕하세요^.^ 이 페이지에서 +i+번째로 인사를 받으셨습니다. 여기 추후 업데이트 예정...')
-    ">
-
+  onclick="
+  var i=0;
+  i=i+1;
+  alert('안녕하세요^.^ 이 페이지에서 '+i+'번째로 인사를 받으셨습니다. 여기 추후 업데이트 예정...');
+  ">
 
   <br><br><br><input type="button" value="야간모드" style="font-size: 15px;" onclick="
-    if(this.value === '야간모드'){
-    A.style.backgroundColor='black';
-    A.style.color='white';
-    this.value = '야간모드 끄기';
-    }
-
-    else {A.style.backgroundColor='lavender';
-      A.style.color='black';
-      this.value = '야간모드';
-    }
+    nightandday(this);
     ">
 
   <br><br>여기에 당신의 이름을
   <br>입력 해 보세요
-  <br><input type="textbox" id="이름세기" onchange="
-  alert('당신의 이름은 +B+글자 입니다.');
-  ">
+  <br><input type="text" id="info" onkeypress="return count(this);">
 
 </ul>
-
 
 <div style="text-align:center;">
 <br><br><br>안녕하세요

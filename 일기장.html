@@ -4,20 +4,43 @@
 <title>일기장</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="style.css">
-
+<script src="colors.js"></script>
 </head>
+<body>
 
-<h2 style="color:black; font-size: 35px; text-align: center;">oO MY FIRST WEB PAGE Oo</h2>
+<h2 style="color:black; font-size: 35px; text-align: center;">
+  <a href="index.html">oO MY FIRST WEB PAGE Oo</a></h2>
+
 
 <div id=grid>
 <ul>
-<h1><a href="index.html" style="color:green; text-decoration:underline; font-size:40px;" class="contents">
+<h1><a href="index.html" style="color:black; text-decoration:underline; font-size:40px;">
   Main
 </a></h1>
 
-<a href="방명록.html" style="font-size:20px">[방명록]</a>
+<div id=목차>
+<a href="방명록.html" style="font-size:20px;">[방명록]</a>
 <br><a href="일기장.html" style="font-size:20px">[일기장]</a>
 <br><a href="일촌신청.html" style="font-size:20px">[일촌신청]</a>
+<div>
+
+  <br><br><br><input type="button" value="주인장에게 인사받기" style="font-size: 15px;"
+  onclick="
+  var i=0;
+  i=i+1;
+  alert('안녕하세요^.^ 이 페이지에서 '+i+'번째로 인사를 받으셨습니다. 여기 추후 업데이트 예정...');
+  ">
+
+  <br><br><br><input type="button" value="야간모드" style="font-size: 15px;" onclick="
+    nightandday(this);
+    ">
+    
+<br><br>여기에 당신의 이름을
+<br>입력 해 보세요
+<br><input type="textbox" onchange="
+alert('당신의 이름은 +B+글자 입니다.');
+">
+
 </ul>
 
 <div style="text-align:center;">
@@ -83,6 +106,14 @@
   <br>확장명을 변경했더니 이제 잘 뜨는 것 같다.
   <br>후후.
   <br>이제 내일부터는 WEB2 CSS 들어야지
+</p>
+
+<br>
+<p>
+  <strong>6월 21일 화요일 날씨 더움</strong>
+  <br>귀찮아서 일기를 쓰지를 못하겠네
+  <br>하지만 코딩 공부는 계속 하고 있다. CSS진작에 완강함
+  <br>지금은 자바스크립트 공부하는 중 ^^
 </p>
 
 </div>

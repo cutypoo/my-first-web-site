@@ -4,20 +4,42 @@
 <title>방명록</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="style.css">
-
+<script src="colors.js"></script>
 </head>
+<body>
+  <h2 style="color:black; font-size: 35px; text-align: center;">
+    <a href="index.html">oO MY FIRST WEB PAGE Oo</a></h2>
 
-<h2 style="color:black; font-size: 35px; text-align: center;">oO MY FIRST WEB PAGE Oo</h2>
 
 <div id=grid>
 <ul>
-<h1><a href="index.html" style="color:green; text-decoration:underline; font-size:40px;" class="contents">
-  Main
-</a></h1>
+  <h1><a href="index.html" style="color:black; text-decoration:underline; font-size:40px;">
+    Main
+  </a></h1>
 
-<a href="방명록.html" style="font-size:20px">[방명록]</a>
-<br><a href="일기장.html" style="font-size:20px">[일기장]</a>
-<br><a href="일촌신청.html" style="font-size:20px">[일촌신청]</a>
+  <div id=목차>
+  <a href="방명록.html" style="font-size:20px;">[방명록]</a>
+  <br><a href="일기장.html" style="font-size:20px">[일기장]</a>
+  <br><a href="일촌신청.html" style="font-size:20px">[일촌신청]</a>
+  <div>
+    
+    <br><br><br><input type="button" value="주인장에게 인사받기" style="font-size: 15px;"
+    onclick="
+    var i=0;
+    i=i+1;
+    alert('안녕하세요^.^ 이 페이지에서 '+i+'번째로 인사를 받으셨습니다. 여기 추후 업데이트 예정...');
+    ">
+
+    <br><br><br><input type="button" value="야간모드" style="font-size: 15px;" onclick="
+      nightandday(this);
+      ">
+
+  <br><br>여기에 당신의 이름을
+  <br>입력 해 보세요
+  <br><input type="textbox" onchange="
+  alert('당신의 이름은 +B+글자 입니다.');
+  ">
+
 </ul>
 
 <div style="text-align:center;">
